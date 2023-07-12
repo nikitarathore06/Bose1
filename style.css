@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.desktop-nav {
+    background-color: black;
+    color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+.desktop-nav img {
+    padding-top: 20px;
+    height: 80px;
+}
+
+.primary-links {
+    list-style: none;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.main_logo {
+    height: 80px;
+    margin-top: -10px;
+}
+
+.desktop-nav form {
+    position: relative;
+}
+
+.desktop-nav input {
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: none;
+    width: 300px;
+}
+
+.desktop-nav button {
+    border-radius: 0px 20px 20px 0px;
+    position: absolute;
+    padding: 5px;
+    right: 10px;
+    bottom: 2px;
+    border: none;
+    background: none;
+}
+
+.secondary-nav {
+    color: #fff;
+    background-color: black;
+    padding-bottom: 20px;
+}
+
+.secondary-links {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secondary-links li {
+    margin-left: 30px;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 2px 5px;
+    transition: all ease-in-out 0.3s;
+}
+
+.secondary-links li:hover {
+    background-color: #fff;
+    color: black;
+    border-radius: 200px;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.hero {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    background-image: url(./images/back.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.text-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 500px;
+}
+
+.text-section h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    line-height: 40px;
+    color: #fff;
+}
+
+.shop-btn {
+    background-color: #fff;
+    color: gray;
+    height: 40px;
+    width: 250px;
+    border-radius: 20px;
+    font-size: 20px;
+    border: none;
+}
+
+.shop-btn:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.image-section {
+    height: 250px;
+    background-image: url(./images/back.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: none;
+}
+
+.f-products h1 {
+    padding: 20px;
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.product-card {
+    background-color: rgb(248, 239, 239);
+    margin: 5px;
+}
+
+.product-thumb {
+    height: 225px;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.one {
+    background-image: url(./images/firstear.png);
+}
+
+.two {
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(./images/secondsetup.png);
+}
+
+.three {
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(./images/bluetooth.png);
+}
+
+.four {
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(./images/headphones.png);
+}
+
+.product-card h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.new {
+    background-color: gray;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.product-card p {
+    text-align: left;
+    margin-left: 15px;
+}
+
+.everything {
+    height: 80vh;
+    width: 100%;
+    background-image: url(./images/sound.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    float: left;
+    padding: 60px;
+}
+
+.everything h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    line-height: 40px;
+    color: #fff;
+    margin-left: 50px;
+}
+
+.everything p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    line-height: 40px;
+    color: #fff;
+    margin-left: 50px;
+}
+
+.everything button {
+    background-color: #fff;
+    color: #242424;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    font-size: 16px;
+    margin-left: 50px;
+    font-weight: bold;
+    margin-left: 100px;
+    border: 1px solid #242424;
+}
+
+.camera {
+    height: 80vh;
+    width: 100%;
+    background-image: url(./images/camera.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    padding: 60px;
+}
+
+.camera h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    line-height: 40px;
+    color: black;
+}
+
+.camera p {
+    font-size: 15px;
+    margin-bottom: 30px;
+    line-height: 10px;
+    margin-right: 25px;
+    color: #242424;
+}
+
+.camera button {
+    background-color: #242424;
+    color: #fff;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    font-size: 16px;
+    margin-right: 140px;
+    border: 1px solid #242424;
+}
+
+.speaker {
+    height: 80vh;
+    width: 100%;
+    background-image: url(./images/speaker.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    float: left;
+    padding: 60px;
+}
+
+.speaker h4 {
+    padding-left: 160px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.speaker h1 {
+    padding-left: 40px;
+    font-size: 32px;
+    margin-bottom: 20px;
+    line-height: 40px;
+    color: #fff;
+    margin-left: 50px;
+}
+
+.speaker p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    line-height: 40px;
+    color: #fff;
+    margin-left: 62px;
+}
+
+.speaker button {
+    background-color: #fff;
+    color: #242424;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    font-size: 16px;
+    margin-left: 120px;
+    font-weight: bold;
+    border: 1px solid #242424;
+}
+
+.headphone {
+    height: 80vh;
+    width: 100%;
+    background-image: url(./images/headphone1.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    padding: 60px;
+}
+
+.headphone-text {
+    background-color: white;
+    padding: 50px;
+}
+
+.headphone h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    line-height: 20px;
+    color: black;
+}
+
+.headphone p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    line-height: 20px;
+    color: #242424;
+    text-align: center;
+}
+
+.headphone button {
+    background-color: #242424;
+    color: #fff;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    margin-left: 140px;
+    font-size: 16px;
+    border: none;
+}
+
+.power {
+    height: 80vh;
+    width: 100%;
+    background-image: url(./images/power.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    padding: 60px;
+}
+
+.power h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    line-height: 40px;
+    color: white;
+}
+
+.power p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    line-height: 20px;
+    color: white;
+    padding-right: 100px;
+}
+
+.power button {
+    background-color: white;
+    color: #242424;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 100px;
+    border: 1px solid #242424;
+}
+
+.link-section {
+    height: 20vh;
+    width: 100%;
+    background-color: #191919;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    
+}
+
+.link-section i {
+    font-size: 30px;
+    color: #8c8c8c;
+    padding: 20px;
+    font-size: 19px;
+}
+
+.footer {
+    background-color: #0d0d0d;
+    padding: 100px;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    line-height: 30px;
+    justify-content: space-between;
+}
+
+.footer li {
+    list-style: none;
+}
+
+.footer .first {
+    color: white;
+    margin-bottom: 108px;
+}
+
+.footer .second {
+    color: #8c8c8c;
+}
+
+.footer .third {
+    color: #8c8c8c;
+}
+
+
+/* Responsive Design */
+
+@media(max-width: 1120px) {
+    .desktop-nav,
+    .secondary-nav {
+        display: none;
+    }
+    .mobile-nav {
+        padding: 5px 20px;
+        background-color: black;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 32px;
+    }
+    .mobile-nav img {
+        height: 70px;
+    }
+    .text-section {
+        width: 100%;
+    }
+    .hero {
+        background-color: #fff;
+        background-image: none;
+    }
+    .image-section {
+        display: block;
+    }
+    .products {
+        justify-content: center;
+    }
+}
